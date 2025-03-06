@@ -3,7 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     int a, b, temp;
 
     cout << "Enter two number : ";
@@ -13,6 +14,6 @@ int main(){
     temp = a;
     a = b;
     b = temp;
-    cout << " After swapping : a = " << a << " b = " << b <<endl;
+    cout << " After swapping : a = " << a << " b = " << b << endl;
     return 0;
 }
