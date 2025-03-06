@@ -3,16 +3,19 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     int a;
 
     cout << "Enter a number : ";
     cin >> a;
 
-    if (a>0){
+    if (a > 0)
+    {
         cout << a << " is positive number.";
     }
-    else{
+    else
+    {
         cout << a << " is negative number.";
     }
 
