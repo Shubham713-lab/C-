@@ -20,6 +20,7 @@ int main()
             break;
         }
     }
+    
     if (isPrime)
     {
         cout << "it is prime number";
