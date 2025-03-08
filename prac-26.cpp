@@ -4,20 +4,24 @@
 using namespace std;
 
 class Complex {
-    float real, imag;
+    float r1, r2, i1, i2;
 public:
-    Complex(float r = 0, float i = 0) : real(r), imag(i) {}
-    friend Complex addComplex(Complex, Complex);
-    void display() { cout << "The sum is : " << real << " + " << imag << "i" << endl; }
+    void setValues(){
+        cout << "Enter first complex no. : ";
+        cin >> r1 >> i1;
+        cout << "Enter second complex no. : ";
+        cin >> r2 >> i2;
+    }
+    friend void addComplex(Complex c1);
 };
 
-Complex addComplex(Complex c1, Complex c2) {
-    return Complex(c1.real + c2.real, c1.imag + c2.imag);
+void addComplex(Complex c1) {
+    cout << "The sum of Complex no. is : " << c1.r1 + c1.r2 << " + " << c1.i1 + c1.i2 << "i"<<endl;
 }
 
 int main() {
-    Complex c1(3.2, 2.5), c2(1.5, 4.5);
-    Complex sum = addComplex(c1, c2);
-    sum.display();
+    Complex c1;
+    c1.setValues();
+    addComplex(c1);
     return 0;
 }
